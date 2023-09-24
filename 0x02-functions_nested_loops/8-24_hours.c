@@ -1,36 +1,27 @@
 #include "main.h"
 
 /**
- * jack_bauer - orints every minute of a day
+ * jack_bauer - prints time
  *
- * Retuns: returns void
+ * Description: prints a list of time
+ * Return: Always 0.
  */
 
 void jack_bauer(void)
 {
-	int i;
-	int j;
-	int k;
-	int l;
+	int i, j;
 
-	for (i = 48; i <= 50; i++)
+	for (i = 0; i < 24; i++)
 	{
-		for (j = 48; j <= 57; j++)
+		for (j = 0; j < 60; j++)
 		{
-			for (k = 48; k <= 53; k++)
-			{
-				for (l = 48; l <= 57; l++)
-				{
-					if (i >= 50 && j >= 52)
-					break;
-					_putchar(i);
-					_putchar(j);
-					_putchar(58);
-					_putchar(k);
-					_putchar(l);
-					_putchar('\n');
-				}
-			}
+			_putchar(i / 10 + 48);
+			_putchar(i % 10 + 48);
+			_putchar(':');
+			_putchar(j / 10 + 48);
+			_putchar(j % 10 + 48);
+			_putchar('\n');
 		}
 	}
 }
+

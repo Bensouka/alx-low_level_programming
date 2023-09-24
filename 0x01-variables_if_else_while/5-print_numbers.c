@@ -1,20 +1,26 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of the program
+ * main - print single digit numbers
  *
- * Return: returns 0
+ * Descripton: print single digit numbers
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int number;
+	int i;
 
-	for (number = 0; number < 10; number++)
+	i = 48;
+
+	while (i < 58)
 	{
-		printf("%d", number);
+		putchar(i);
+		i++;
 	}
-	putchar('\n');
+
+	putchar(10);
 
 	return (0);
 }

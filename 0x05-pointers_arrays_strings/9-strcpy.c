@@ -1,21 +1,23 @@
-#include <stdio.h>
 #include "main.h"
-
+#include <stdio.h>
 /**
- * _strcpy - functions that coies string
- * @dest: variable to be evaluated
- * @src: variable to be evaluated
- * Return: Return void
+ * _strcpy - copies the string pointed to by src,
+ * including the terminating null byte, to the
+ * buffer pointed to by dest.
+ * @dest: destination.
+ * @src: source.
+ * Return: the pointer to dest.
  */
 char *_strcpy(char *dest, char *src)
 {
-	int a = 0;
+	int count = 0;
 
-	for (; src[a] != '\0'; a++)
+	while (count >= 0)
 	{
-		dest[a] = src[a];
+		*(dest + count) = *(src + count);
+		if (*(src + count) == '\0')
+			break;
+		count++;
 	}
-
-	dest[a] = '\0';
 	return (dest);
 }

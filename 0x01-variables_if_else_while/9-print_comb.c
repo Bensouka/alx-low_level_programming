@@ -1,27 +1,31 @@
 #include <stdio.h>
 
 /**
- *  main - Entry point of program
+ * main - print single digit numbers
  *
- *  Return: return 0
+ * Description: print single digit numbers with commas
+ *
+ * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	int number;
+	int i;
 
-	for (number = 0; number < 10; number++)
+	i = 48;
+
+	while (i < 58)
 	{
-		putchar(number + '0');
-
-		if (number != 9)
+		putchar(i);
+		if (i != 57)
 		{
-			putchar(',');
-			putchar(' ');
+			putchar(44);
+			putchar(32);
 		}
-
+		i++;
 	}
-	putchar('\n');
+
+	putchar(10);
 
 	return (0);
 }

@@ -1,13 +1,15 @@
 #include <stdio.h>
 
 /**
- * main - Entry point of every program
+ * main - Entry point
  *
- * Return: Always written in 0
+ * Description: prints "with proper grammar, but the outcome is a piece of
+ * art,"
+ *
+ * Return: Always 0 (Success)
  */
 int main(void)
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-
 	return (0);
 }

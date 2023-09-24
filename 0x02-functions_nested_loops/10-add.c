@@ -1,19 +1,15 @@
 #include "main.h"
 
 /**
- * add - Adds two integers
+ * add - add two numbers from input
+ * @a: first aparamet
+ * @b: second parameter
  *
- * @i: First input
- * @j: Second input
- *
- * Return: returns sum
+ * Description: adds two numbers
+ * Return: Always (0).
  */
 
-int add(int i, int j)
+int add(int a, int b)
 {
-	int k;
-
-	k = i + j;
-
-	return (k);
+	return (a + b);
 }
